@@ -28,6 +28,10 @@
             }
         }
     }
+    .consultation {
+        min-height: 590px;
+        padding: 37px 0 35px 25px;
+    }
 }
 @media (max-width: 767px) {
     .promo {
@@ -98,6 +102,17 @@
             }
         }
     }
+    .consultation {
+        padding: 37px 20px 35px 20px;
+        &__descr {
+            text-align: left;
+        }
+    }
+        .title {
+            font-size: 24px;
+            text-align: left;
+            line-height: 40px;
+        }
 }
 @media (max-width: 575px) {
     .container {
@@ -163,6 +178,28 @@
             width: 160px;
             height: 40px;
         }
+    }
+    .consultation {
+        min-height: 520px;
+        padding: 30px 0 30px 0;
+        &__descr {
+            font-size: 15px;
+            line-height: 25px;
+            margin-top: 10px;
+            text-align: center;
+        }
+    }
+    .title {
+        font-size: 19px;
+        text-align: center;
+        line-height: 30px;
+        br {
+            display: none;
+        }
+    }
+    .feed-form {
+        width: 250px;
+        margin: 20px auto;
     }
 }
 
