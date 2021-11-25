@@ -32,6 +32,20 @@
         min-height: 590px;
         padding: 37px 0 35px 25px;
     }
+    .carousel {
+        &__inner {
+            width: 500px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .catalog {
+        padding: 65px;
+        &-item {
+            width: 49%;
+        }
+    }
 }
 @media (max-width: 767px) {
     .promo {
@@ -113,6 +127,48 @@
             text-align: left;
             line-height: 40px;
         }
+    .carousel {
+        padding: 53px 0 34px 0;
+        &__inner {
+            width: 450px;
+            img {
+                width: 100%;
+            }
+        }
+        .slick-dots {
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+            padding-left: 0;
+            li {
+                list-style-type: none;
+                margin: 0 25px;
+                font-size: 0;
+            }
+            button {
+                width: 15px;
+                height: 15px;
+                border: none;
+                background-color: $main-color;
+                border-radius: 100%;
+            }
+        }
+    }
+    .catalog {
+        padding: 20px 30px 25px 30px;
+        .title {
+            text-align: center;
+        }
+        &__tabs {
+            margin-top: 35px;
+        }
+        &__tab {
+            width: 152px;
+            height: 45px;
+            font-size: 15px;
+            line-height: 43px;
+        }
+    }
 }
 @media (max-width: 575px) {
     .container {
