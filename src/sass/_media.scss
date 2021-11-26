@@ -43,7 +43,7 @@
     .catalog {
         padding: 65px;
         &-item {
-            width: 49%;
+            max-width: 49%;
         }
     }
 }
@@ -87,6 +87,9 @@
     }
     .advantages {
         padding: 35px 0 30px 0;
+        .title {
+            text-align: center;
+        }
         &__wrapper {
             margin-top: 45px;
             padding: 0px 10px;
@@ -161,13 +164,52 @@
         }
         &__tabs {
             margin-top: 35px;
+            padding-left: 6px;
         }
         &__tab {
-            width: 152px;
+            max-width: 185px;
             height: 45px;
             font-size: 15px;
             line-height: 43px;
         }
+        &__content {
+            margin-top: 40px;
+            justify-content: space-evenly;
+        }
+        &-item {
+            padding: 14px 12px 15px 12px;
+            margin-bottom: 10px;
+            min-height: 425px;
+            img {
+                height: 180px;
+            }
+            &__descr {
+                margin-top: 12px;
+            }
+            hr {
+                margin-top: 10px;
+                margin-bottom: 12px;
+            }
+            &__old-price {
+                font-size: 13px;
+            }
+            &__price {
+                font-size: 17px;
+            }
+            &__list {
+                li {
+                    font-size: 14px;
+                    margin-bottom: 10px; 
+                }
+            }
+        }
+        .button {
+            &_mini {
+                width: 120px;
+                height: 40px;
+                font-size: 14px;
+            }
+        }    
     }
 }
 @media (max-width: 575px) {
@@ -257,6 +299,31 @@
         width: 250px;
         margin: 20px auto;
     }
+    .carousel {
+        padding: 19px 0 19px 0;
+        &__inner {
+            width: 290px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .catalog {
+        padding: 5px 0 10px 0;
+        .title {
+            text-align: center;
+        }
+        &__tabs {
+            margin-top: 17px;
+            flex-wrap: wrap;
+        }
+        &__tab {
+            margin: 10px 0;
+        }
+        &-item {
+            max-width: 100%;
+        } 
+    }     
 }
 
 
