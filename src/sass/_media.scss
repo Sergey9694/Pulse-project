@@ -255,6 +255,19 @@
             padding: 25px 25px;
         }
     }
+    .overlay {
+        .modal {
+            width: 330px;
+            min-height: 370px;
+            padding: 12px 12px 12px 12px;
+        }
+        .feed-form {
+            margin-top: 25px;
+            margin-left: 12px;
+            width: 280px;
+        }
+    }
+    
 }
 @media (max-width: 575px) {
     .container {
@@ -407,6 +420,34 @@
                height: 23px;
             }
         }
+    }
+    .overlay {
+       .modal {
+            width: 270px;
+            min-height: 290px;
+            padding: 12px 12px 12px 12px;
+            &__close {
+                top: -34px;
+                right: -15px;
+                font-size: 50px;
+            }
+            &__subtitle {
+                font-size: 15px;
+            }
+            &__description {
+                font-size: 11px;
+            }
+        }
+        .feed-form {
+            margin: 10px auto;
+            width: 235px;
+        }
+        .button {
+            &_submit {
+                height: 50px;
+                font-size: 14px;
+            }
+        } 
     }
 }
 
