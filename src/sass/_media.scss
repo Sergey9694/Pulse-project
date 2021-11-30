@@ -57,6 +57,9 @@
             }
         }
     }
+    .pageup {
+        right: 12px;
+    }
 }
 @media (max-width: 767px) {
     *:hover {
@@ -266,6 +269,11 @@
             margin-left: 12px;
             width: 280px;
         }
+    }
+    .pageup {
+        right: 3px;
+        width: 30px;
+        height: 30px;
     }
     
 }

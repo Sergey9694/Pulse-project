@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="container">
             <header class="header">
                 <a href="#" class="header__logo">
@@ -42,7 +43,7 @@
                         Бесплатная доставка
                     </div>
                     <div class="promo__icon">
-                        <img src="icons/messages 64.png" alt="messages">
+                        <img src="icons/messages-64.png" alt="messages">
                         Ответим на все вопросы
                     </div>
                 </div>
@@ -70,7 +71,7 @@
                     </div>
                 </div>
                 <div class="advantages__items">
-                    <img src="icons/heart.png" alt="heart" class="advantages__icon">
+                    <img src="icons/heart.png" alt="heart" class="advantages__icon advantages__icon_animated">
                     <div class="advantages__subtitle">
                         Заботимся о здоровье
                     </div>
@@ -109,7 +110,7 @@
         </div>
     </section>
 
-    <section class="carousel">
+    <div class="carousel">
         <div class="container">
             <div class="carousel__inner">
                 <div>
@@ -123,7 +124,7 @@
                 </div>
               </div>
         </div>
-    </section>
+    </div>
     
     <section class="catalog">
         <div class="container">
@@ -470,7 +471,7 @@
     <section class="reviews">
         <div class="container">
             <h2 class="title">отзывы клиентов</h2>
-            <div class="reviews__item">
+            <div class="reviews__item animate__animated animate__fadeInUp wow" data-wow-duration="2s" data-wow-dalay="1s">
                 <img src="img/photo_1.png" alt="Irina" class="reviews__img">
                 <div class="reviews__text">
                     <div class="reviews__subtitle">Ирина Иванченко </div>
@@ -484,7 +485,7 @@
                 </div>
             </div>
 
-            <div class="reviews__item">
+            <div class="reviews__item animate__animated animate__fadeInUp wow" data-wow-duration="2s" data-wow-dalay="1s"">
                 <img src="img/photo_2.png" alt="Ivan" class="reviews__img">
                 <div class="reviews__text">
                     <div class="reviews__subtitle">Иван Сёмочкин </div>
@@ -497,7 +498,7 @@
                 </div>
             </div>
 
-            <div class="reviews__item">
+            <div class="reviews__item animate__animated animate__fadeInUp wow" data-wow-duration="2s" data-wow-dalay="1s"">
                 <img src="img/photo_3.png" alt="Yulia" class="reviews__img">
                 <div class="reviews__text">
                     <div class="reviews__subtitle">Юлия Дашкина </div>
@@ -558,11 +559,17 @@
         </div>
     </div>
 
+    <a href="#up" class="pageup">
+        <img src="icons/arrow-5.svg" alt="up">
+    </a>
+    
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
