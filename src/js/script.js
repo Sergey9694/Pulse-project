@@ -26,13 +26,13 @@ $(document).ready(function(){
             $(this).on('click', function(e) {
                 e.preventDefault();
                 $('.catalog-item__content').eq(i).toggleClass('catalog-item__content_active');
-                $('.catalog-item__list').eq(i).toggleClass('catalog-item__list_active');
+                $('.catalog-item__block').eq(i).toggleClass('catalog-item__block_active');
             })
         });
     };
 
     toogleSlide('.catalog-item__link');
-    toogleSlide('.catalog-item__back');
+    toogleSlide('.catalog-item__block__back');
 
     // Modal
 

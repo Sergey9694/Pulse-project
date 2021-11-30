@@ -121,7 +121,7 @@
                 margin-right: 20px;
             }
         }
-        &__list {
+        &__block {
             position: relative;
             width: 50%;
             margin-left: 20px;
@@ -130,43 +130,45 @@
             transition: 0.5s all;
             padding-left: 19px;
             margin-bottom: 0;
-            list-style-type: none;
             &_active {
                 transform: translateX(-100%);
                 margin-left: 0px;
             }
-            li {
-                position: relative;
-                color: #555555;
-                font-weight: 300;
+            &__list {
+                list-style-type: none;
+                li {
+                    position: relative;
+                    color: #555555;
+                    font-weight: 300;
+                    font-size: 14px;
+                    margin-bottom: 20px;
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        width: 5px;
+                        height: 5px;
+                        background-color: $main-color;
+                        left: -14px;
+                        top: 7px;
+                    }
+                }
+                
+            }
+            &__back {
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(calc(-50% - 19px));
+                display: block;
+                color: $main-color;
+                font-weight: 500;
                 font-size: 14px;
-                margin-bottom: 20px;
-                &:before {
-                    content: '';
-                    position: absolute;
-                    width: 5px;
-                    height: 5px;
-                    background-color: $main-color;
-                    left: -14px;
-                    top: 7px;
+                text-decoration: underline;
+                text-transform: uppercase;
+                &:hover {
+                    color: $main-color;
                 }
             }
         }
-        &__back {
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(calc(-50% - 19px));
-            display: block;
-            color: $main-color;
-            font-weight: 500;
-            font-size: 14px;
-            text-decoration: underline;
-            text-transform: uppercase;
-            &:hover {
-                color: $main-color;
-            }
-        }
-
     }
 }

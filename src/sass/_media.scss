@@ -214,13 +214,16 @@
             &__price {
                 font-size: 17px;
             }
+        &__block {
             &__list {
+                padding-left: 5px;
                 li {
                     font-size: 14px;
-                    margin-bottom: 10px; 
+                    margin-bottom: 5px; 
                 }
             }
         }
+    }
         .button {
             &_mini {
                 width: 120px;
