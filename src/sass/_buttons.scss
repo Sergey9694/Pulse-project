@@ -8,9 +8,13 @@
     font-weight: 500;
     font-size: 12px;
     text-transform: uppercase;
+    transition: 0.5s all;
     &:hover {
         background-color: rgb(226, 126, 12);
     }
+    /* &:focus {
+        background-color: $main-color;
+    } */
     &_main {
         margin-top: 67px;
         width: 300px;
